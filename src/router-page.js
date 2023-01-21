@@ -14,7 +14,7 @@ export default function RoutePage(){
             <Route path="/log-in" element={<SignIn />}/>
             <Route path="/" element={<Common Component={Hero} />}/>
             <Route path='/sign-up' element={<SignUp />}/>
-            <Route path='/about-us' element={< Common Component={About} />} />
+            <Route path='/about-us' element={<Common Component={About} />} />
             <Route path='/services' element={<Common Component={Services} />}/>
             <Route path='/get-quote' element={<Common Component={Contact} />} />          
         </Routes>

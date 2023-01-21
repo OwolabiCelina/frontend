@@ -1,44 +1,64 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 
 const SignUp = () => {
+
+    const [userData, setUserData] = useState({
+        firstName: "",
+        latsName: "",
+        email: "",
+        password: "",
+        phoneNumber: "",
+        city: "",
+        country: "",
+        street: "",
+        state: ""
+    });
+    const handleSubmit = (event) => {
+        
+    }
+
     return ( 
         <div className="sign-up">
-            
             <Fragment>
-            <label>FirstName</label>
-            <input type="text"/>
+                <form>
+                   <label>firstName:
+                    <input type="text" />
+                   </label>
 
-            <label>LastName</label>
-            <input type="text"/>
-            
-            
-            <label>Address</label>
-            <input type="text"/>
+                   <label>lastName:
+                    <input type="text" />
+                   </label>
 
-            
-            <label>Email</label>
-            <input type="text"/>
+                   <label>email:
+                    <input type="text" />
+                   </label>
 
-            
-            <label>Password</label>
-            <input type="password"/>
+                   <label>password:
+                    <input type="password" />
+                   </label>
 
-            
-            <label>PhoneNumber</label>
-            <input type="number"/>
+                   <label>phoneNumber:
+                    <input type="number" />
+                   </label>    
 
-            
-            <label>State</label>
-            <input type="text"/>
+                   <label>city:
+                    <input type="text"   />
+                   </label>  
 
-            
-            <label>City</label>
-            <input type="text"/>
+                   <label>country:
+                    <input type="text"   />
+                   </label> 
 
-            
-            <label>Country</label>
-            <input type="text"/>
+                   <label>street:
+                    <input type="text"   />
+                   </label>
 
+                   <label>state:
+                    <input type="text"   />
+                   </label>     
+
+                   <input type="submit" onChange={handleSubmit}/>      
+                </form>
             </Fragment>
         </div>
      );
