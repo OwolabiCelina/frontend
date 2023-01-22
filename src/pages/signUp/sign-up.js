@@ -1,10 +1,11 @@
 import { Fragment, useState } from "react";
+import axios from "axios";
 
 const SignUp = () => {
 
     const [userData, setUserData] = useState({
         firstName: "",
-        latsName: "",
+        lastName: "",
         email: "",
         password: "",
         phoneNumber: "",
@@ -13,8 +14,23 @@ const SignUp = () => {
         street: "",
         state: ""
     });
+
+    const registrationEndPoint = "https://jsonplaceholder.typicode.com/posts"
+
     const handleSubmit = (event) => {
+            event.preventDefault();
+            axios.post(registrationEndPoint, {
+                userData
+            }).then(res => console.log(res)).catch(err => console.log(err))
         
+    }
+
+    const handleChange = (event) => {
+            const {name , value} = event.target;
+
+            setUserData(prevValue => {
+                return {...prevValue, [name]:value}
+            })
     }
 
     return ( 
@@ -22,19 +38,19 @@ const SignUp = () => {
             <Fragment>
                 <form>
                    <label>firstName:
-                    <input type="text" />
+                    <input type="text"  name="firstName" value={userData.firstName} onChange={handleChange}/>
                    </label>
 
                    <label>lastName:
-                    <input type="text" />
+                    <input type="text"  name="lastName" value={userData.lastName}/>
                    </label>
 
                    <label>email:
-                    <input type="text" />
+                    <input type="text" name="email" value={userData.email} />
                    </label>
 
                    <label>password:
-                    <input type="password" />
+                    <input type="password" name="password" value={userData.password} />
                    </label>
 
                    <label>phoneNumber:
@@ -57,7 +73,7 @@ const SignUp = () => {
                     <input type="text"   />
                    </label>     
 
-                   <input type="submit" onChange={handleSubmit}/>      
+                   <input type="submit" onClick={handleSubmit}/>      
                 </form>
             </Fragment>
         </div>
