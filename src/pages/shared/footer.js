@@ -28,10 +28,10 @@ const Footer = () => {
 									<a href="#"><img src="assets/img/logo/logo4.png" alt="" /></a>
 								</div>
 								<div className="ft-footer-address">
-									<span>Address: 27 Division St, New York, NY 10002, USA</span>
+									<span>Address: 312 Herbert Macauley Way, Sabo Yaba Lagos</span>
 									<span>Website: fastrans.com</span>
 									<span>Email: fastrans@mail.com</span>
-									<span>Phone: +8 (123) 152 25 45</span>
+									<span>Phone: +2348034705303</span>
 								</div>
 							</div>
 						</div>

@@ -1,7 +1,7 @@
-
+import Header from "../shared/nav";
 import { useState, Fragment } from "react";
 
-const SignIn = () => {
+const LogIn = () => {
     // const [email, setEmail] = useState("")
     // const [password, setPassword] = useState("")
 
@@ -56,6 +56,7 @@ const SignIn = () => {
     }
     return ( 
         <div className="sign-in">
+            {/* <Header /> */}
             
             <Fragment>
           
@@ -72,4 +73,4 @@ const SignIn = () => {
      );
 } 
  
-export default SignIn;
+export default LogIn;

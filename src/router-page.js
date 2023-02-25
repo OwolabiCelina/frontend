@@ -1,6 +1,6 @@
 import {Routes, Route} from 'react-router-dom'; 
 import Hero from './pages/hero/hero-body';
-import SignIn from './pages/Sign-In/sign-in';
+import LogIn from './pages/LogIn/logIn';
 import SignUp from './pages/signUp/sign-up';
 import About from './pages/about/about';
 import Services from './pages/services/services';
@@ -11,7 +11,7 @@ export default function RoutePage(){
     return(
         <>
         <Routes>
-            <Route path="/log-in" element={<SignIn />}/>
+            <Route path="/log-in" element={<LogIn />}/>
             <Route path="/" element={<Common Component={Hero} />}/>
             <Route path='/sign-up' element={<SignUp />}/>
             <Route path='/about-us' element={<Common Component={About} />} />

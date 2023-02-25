@@ -14,7 +14,7 @@ const Header = () => {
 					<div className="ft-header-top-cta ul-li">
 						<ul>
 							<li><i className="fal fa-envelope"></i>fastrans@support.com</li>
-							<li><i className="fal fa-map-marker-alt"></i>121 WallStreet Street, NY York, USA</li>
+							<li><i className="fal fa-map-marker-alt"></i>312 Herbert Macauley Way, Sabo Yaba Lagos</li>
 						</ul>
 					</div>
 					<div className="ft-header-cta-info d-flex">
@@ -23,7 +23,7 @@ const Header = () => {
 						</div>
 						<div className="ft-header-cta-text headline pera-content">
 							<p>Get In Touch</p>
-							<h3>+90 154 456 784</h3>
+							<h3>+2348034705303</h3>
 						</div>
 					</div>
 				</div>
@@ -54,6 +54,7 @@ const Header = () => {
 									<li>
 										<NavLink to="/log-in">Log in</NavLink>
 									</li>	
+									
 																	
 								</ul>
 							</nav>
